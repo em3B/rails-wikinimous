@@ -3,8 +3,8 @@
   <button type="button"><%= link_to "New Article", articles_new_path %></button>
 </div>
 <% @articles.each do |article| %>
-  <ul>
-    <li><h1><%= link_to article.title, articles_path(article.id) %></h1></li>
+  <div>
+    <h1><%= link_to article.title, article_path(article.id) %></h1>
     <p><%= article.content %></p>
-  </ul>
+  </div>
 <% end %>
