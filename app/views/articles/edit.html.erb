@@ -1,0 +1,20 @@
+<div class="navbar">
+  <h1 id="home"><%= link_to "Wikinimous", articles_path %></h1>
+  <h2 id="new-article"><%= link_to "New Article", articles_new_path %></h2>
+</div>
+<h1>Editing article</h1>
+<div id="form">
+  <%= form_for(@article) do |f| %>
+    <div id="form-title">
+      <%= f.label "Title" %>
+      <%= f.text_field :title %>
+    </div>
+    <div id="form-content">
+      <%= f.label :content %>
+      <textarea><%= f.text_field :content %></textarea>
+    </div>
+    <div id="form-btn">
+      <%= f.submit %>
+    </div>
+  <% end %>
+</div>

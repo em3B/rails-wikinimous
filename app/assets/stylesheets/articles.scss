@@ -23,3 +23,22 @@ h1, h2, p {
 h1 {
   color: #337ab7;
 }
+#form {
+  display: block;
+}
+#form-title {
+  padding: 20px;
+}
+#form-content {
+  padding: 20px;
+}
+textarea {
+  column-count: initial;
+  cursor: text;
+  display: inline-block;
+  text-align: start;
+}
+#form-btn {
+  padding: 20px;
+  background-color: white;
+}
